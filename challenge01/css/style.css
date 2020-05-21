@@ -75,3 +75,20 @@
     .header__company-name{
         max-height: 78px;
     }
+    .main{
+        margin-top: 25px;
+    }
+    
+
+    @media (min-width: 768px) {
+        .main__content{
+            display: flex;
+        }
+        .main__content__left,
+        .main__content__right{
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            
+        }
+      }
