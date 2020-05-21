@@ -44,3 +44,34 @@
     font-weight: normal;
     src: url('./../font/TitilliumText22L005.woff') format('woff');
     }
+    html, body,figure, header{
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrapper{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100vh;
+        background-image: url('../img/background.jpg');
+        background-size: cover;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 55px;
+    }
+    .header__company-logo,
+    .header__company-name{
+        opacity: 0.35;
+        max-width: 100%;
+    }
+    .header__company-logo{
+        margin-right: 24px;
+        max-height: 111px;
+    }
+    .header__company-name{
+        max-height: 78px;
+    }
