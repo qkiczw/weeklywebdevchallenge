@@ -78,6 +78,13 @@
     .main{
         margin-top: 25px;
     }
+    .register__form__title{
+        font-family: 'TitilliumText22L-Light';
+        font-size: 32px;
+        color: #ffffff;
+        text-shadow: 2px 2px #000000;
+        margin-bottom: 18px;
+    }
     
 
     @media (min-width: 768px) {
