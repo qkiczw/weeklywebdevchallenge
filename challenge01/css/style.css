@@ -48,13 +48,16 @@
         margin: 0;
         padding: 0;
     }
+    body{
+        background-image: url('../img/background.jpg');
+        background-size: cover;
+    }
 
     .wrapper{
         box-sizing: border-box;
         width: 100%;
-        height: 100vh;
-        background-image: url('../img/background.jpg');
-        background-size: cover;
+        min-height: 100vh;
+        
     }
     .header{
         display: flex;
@@ -87,7 +90,7 @@
         text-shadow: 2px 2px #000000;
         margin-bottom: 18px;
     }.register__form__container{
-        position: relative;
+        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
