@@ -29,14 +29,46 @@
                                 <div class="register__form__container__bg"></div>
                                 <form action="" method="get" class="register__form__container__form">
                                     <div class="form__section">
-                                        <input class="form__section__input">
-                                        <label class="form__section__label">
+                                        <input class="form__section__input" id="user__name" type="text" name="reg__user__name" required>
+                                        <label class="form__section__label" for="user__name">
                                           <img class="form__section__label__icon" src="./img/glyphicons_003_user.png"> 
                                           <span class="form__section__vertical-label"></span> 
                                           <span class="form__section__placeholder">Username</span>
                                         </label>
                                     </div>
-                                </form> 
+                                    <div class="form__section">
+                                        <input class="form__section__input" id="reg__user__password" type="password" name="reg__user__password" minlength="8" required>
+                                        <label class="form__section__label" for="reg__user__password">
+                                          <img class="form__section__label__icon" src="./img/glyphicons_203_lock.png"> 
+                                          <span class="form__section__vertical-label"></span> 
+                                          <span class="form__section__placeholder">Password</span>
+                                        </label>
+                                    </div>
+                                    <div class="form__section">
+                                        <input class="form__section__input" id="reg__confirm__user__password" type="password" name="reg__confirm__user__password" minlength="8" required>
+                                        <label class="form__section__label" for="reg__confirm__user__password">
+                                          <img class="form__section__label__icon" src="./img/glyphicons_203_lock.png"> 
+                                          <span class="form__section__vertical-label"></span> 
+                                          <span class="form__section__placeholder">Confirm password</span>
+                                        </label>
+                                    </div>
+                                    <div class="form__section">
+                                        <input class="form__section__input" id="reg__email" type="password" name="reg__email" minlength="8" required>
+                                        <label class="form__section__label" for="reg__email">
+                                          <img class="form__section__label__icon" src="./img/glyphicons_010_envelope.png"> 
+                                          <span class="form__section__vertical-label"></span> 
+                                          <span class="form__section__placeholder">Email</span>
+                                        </label>
+                                    </div>
+                                    <div class="form__section">
+                                        <input class="form__section__input" id="reg__location" type="password" name="reg__location" minlength="8" required>
+                                        <label class="form__section__label" for="reg__location">
+                                          <img class="form__section__label__icon" src="./img/glyphicons_242_google_maps.png"> 
+                                          <span class="form__section__vertical-label"></span> 
+                                          <span class="form__section__placeholder">Email</span>
+                                        </label>
+                                    </div>
+                                </form>
                             </div>
                         </section>
                     </div>

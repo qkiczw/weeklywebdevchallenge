@@ -39,6 +39,13 @@
   font-weight: normal;
   src: url("./../font/TitilliumText22L005.woff") format("woff");
 }
+
+:root {
+  --primary-color: #afafaf;
+  --secondary-color: #dedede;
+  --third-color: #c6c6c6;
+}
+
 html,
 body,
 figure,
@@ -124,9 +131,8 @@ body {
   align-items: center;
   width: 338px;
   height: 39px;
-  /* border: 1px solid #c6c6c6; */
   border-radius: 5px;
-  color: #afafaf;
+  color: var(--primary-color);
   margin-top: 21px;
 }
 .form__section__input {
@@ -143,7 +149,7 @@ body {
 .form__section__vertical-label {
   width: 1px;
   height: 30px;
-  background-color: #dedede;
+  background-color: var(--secondary-color);
 }
 .form__section__label {
   width: 100%;
@@ -151,7 +157,7 @@ body {
   position:absolute;
   display: flex;
   align-items: center;
-  border: 1px solid #c6c6c6;
+  border: 1px solid var(--third-color);
   border-radius: 5px;
   pointer-events: none;
   transition-duration: 300ms;
@@ -169,13 +175,13 @@ body {
 }
 .form__section__input:focus + .form__section__label{
   border: 1px solid #afafaf;
-  box-shadow: 0px 0px 5px 2px #afafaf;
+  box-shadow: 0px 0px 5px 2px var(--primary-color);
 }
 
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .main__content {
     display: flex;
   }
