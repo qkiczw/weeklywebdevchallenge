@@ -136,8 +136,9 @@ body {
   margin-top: 21px;
 }
 .form__section__input {
+  box-sizing: border-box;
   position: absolute;
-  width: 250px;
+  width: 100%;
   height: auto;
   padding-left: 80px;
   border: none;
