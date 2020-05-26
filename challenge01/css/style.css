@@ -62,7 +62,7 @@ body {
 .form__btn--green {
   width: 339px;
   height: 48px;
-  margin-top: 14px;
+  margin: 14px 0 17px;
   color: #ffffff;
   background: linear-gradient(0deg, rgba(126,195,31,1) 0%, rgba(163,215,64,1) 80%);
   border: 1px solid #3a9a00;
@@ -70,9 +70,12 @@ body {
   font-family: "TitilliumText22L-Regular";
   font-size: 24px;
   text-shadow: 1px 1px #3a9a00;
+  cursor: pointer;
 }
-.form__btn--green:focus {
-  border: 2px solid #3a9a00;
+.form__section__terms label{
+  font-family: "TitilliumText22L-Thin";
+  font-size: 17.34px;
+  padding-left: 14px;
 }
 .wrapper {
   box-sizing: border-box;
