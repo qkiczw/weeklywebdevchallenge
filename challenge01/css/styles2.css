@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "TitilliumText22L-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../font/TitilliumText22L003.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TitilliumText22L-XBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../font/TitilliumText22L006.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TitilliumText22L-Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../font/TitilliumText22L001.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TitilliumText22L-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../font/TitilliumText22L002.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TitilliumText22L-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../font/TitilliumText22L004.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TitilliumText22L-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../font/TitilliumText22L005.woff") format("woff");
+}
+:root {
+  --primary-color: #afafaf;
+  --secondary-color: #dedede;
+  --third-color: #c6c6c6;
+}
+* {
+    margin: 0;
+    padding: 0;}
+
+body {
+  font-family: "TitilliumText22L-Regular";
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  
+}
+
+/* This remove autocomplete bg color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--primary-color) !important;
+}
+
+.wrapper {
+    box-sizing: border-box;
+}
