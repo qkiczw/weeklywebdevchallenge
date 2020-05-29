@@ -46,7 +46,9 @@
   --third-color: #c6c6c6;
 }
 
-html,
+html{
+  width: 100%;
+}
 body,
 figure,
 header,
@@ -85,6 +87,7 @@ input:-webkit-autofill {
   text-shadow: 1px 1px #3a9a00;
   cursor: pointer;
 }
+
 .form__section__terms label {
   position: relative;
   font-family: "TitilliumText22L-Thin";
@@ -152,7 +155,25 @@ input[type="checkbox"]:checked + label > .border > .thick {
 }
 .main {
   margin-top: 25px;
+  
 }
+.main__content {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* Start - test form */
+
+
+
+
+
+
+/* End - test form */
+
+
 .form {
   max-width: 420px;
 }

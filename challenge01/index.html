@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="pl">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="pl"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Weekly Webdev Challenge nr 1</title>
         <meta name="description" content="Weekly Webdev Challenge nr 1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/style.css">
+        <!-- <link rel="stylesheet" href="./css/style.css"> -->
     </head>
     <body>
         <div class="wrapper">
@@ -21,7 +25,29 @@
             <main class="main">
                 <article class="main__content">
                     <div class="main__content__left">
-                        <section class="form register__form">
+                        <section class="form2">
+                            <div class="test__form">
+                                <header class="form__title">
+                                    <h2>Test Form</h2>
+                                </header>
+                                <div class="test__form__container">
+                                    <div class="test__form__container__bg"></div>
+                                    <form action="" method="get" class="test__form__container__form">
+                                        <div class="test__form__section">
+                                            <input class="test__form__section__input" id="user__name" type="text" name="reg__user__name" required>
+                                            <label class="test__form__section__label" for="user__name">
+                                            <img class="test__form__section__label__icon" src="./img/glyphicons_003_user.png"> 
+                                            <span class="test__form__section__vertical-label"></span> 
+                                            <span class="test__form__section__placeholder">Username</span>
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>   
+                        </section>
+                        
+
+                        <!-- <section class="form register__form">
                             <header class="form__title register__form__title">
                                 <h2>Register Form</h2>
                             </header>
@@ -67,7 +93,7 @@
                                             <option value="location02">Location 02</option>
                                             <option value="location03">Location 03</option>
                                         </select>
-                                        <!-- <input class="form__section__input" id="reg__location" type="password" name="reg__location" minlength="8" required> -->
+                                        
                                         <label class="form__section__label" for="reg__location">
                                           <img class="form__section__label__icon" src="./img/glyphicons_242_google_maps.png"> 
                                           <span class="form__section__vertical-label"></span> 
@@ -81,7 +107,7 @@
                                     <button class="form__btn--green">Sign up</button>
                                 </form>
                             </div>
-                        </section>
+                        </section> -->
                     </div>
                     <div class="main__content__right">right column</div>
                 </article>
