@@ -45,14 +45,15 @@
   --third-color: #c6c6c6;
 }
 * {
-    margin: 0;
-    padding: 0;}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: "TitilliumText22L-Regular";
   background-image: url("../img/background.jpg");
   background-size: cover;
-  
 }
 
 /* This remove autocomplete bg color */
@@ -61,11 +62,43 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
+  box-shadow: 0 0 0 30px white inset !important;
 }
 input:-webkit-autofill {
   -webkit-text-fill-color: var(--primary-color) !important;
 }
 
 .wrapper {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+.header {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+}
+.header__company {
+  box-sizing: border-box;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.4;
+}
+.header__company__logo {
+  max-width: 30%;
+}
+.header__company__name {
+  max-width: 50%;
+  margin-left: 2.6%;
+}
+
+@media (min-width: 768px) {
+  .header__company__logo {
+    max-width: 112px;
+  }
+  .header__company__name {
+    max-width: 293px;
+    margin-left: 24px;
+  }
 }
