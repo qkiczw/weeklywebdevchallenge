@@ -68,6 +68,25 @@ input:-webkit-autofill {
   -webkit-text-fill-color: var(--primary-color) !important;
 }
 
+/* Buttons */
+.form__btn--green {
+  width: 339px;
+  height: 48px;
+  margin: 12px 0 17px;
+  color: #ffffff;
+  background: linear-gradient(
+    0deg,
+    rgba(126, 195, 31, 1) 0%,
+    rgba(163, 215, 64, 1) 80%
+  );
+  border: 1px solid #3a9a00;
+  border-radius: 5px;
+  font-family: "TitilliumText22L-Regular";
+  font-size: 24px;
+  text-shadow: 1px 1px #3a9a00;
+  cursor: pointer;
+}
+
 .wrapper {
   box-sizing: border-box;
 }
@@ -95,7 +114,12 @@ input:-webkit-autofill {
 .main__content {
   padding: 0 10px;
 }
-
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .form__title > h2 {
   display: flex;
   justify-content: center;
