@@ -87,10 +87,11 @@ input:-webkit-autofill {
 }
 
 .wrapper {
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;  
 }
 .header {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 55px;
@@ -112,6 +113,10 @@ input:-webkit-autofill {
 }
 .main__content {
   padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .form {
   display: flex;
@@ -155,15 +160,17 @@ input:-webkit-autofill {
   border-radius: 5px;
   opacity: 0.3;
 }
+
+.form__section__terms label {
+  position: relative;
+  font-family: "TitilliumText22L-Thin";
+  font-size: 17.34px;
+}
 /* Media Quereis */
 
-@media (min-width: 578px) {
-  .header__company__logo {
-    max-width: 112px;
-  }
-  .header__company__name {
-    max-width: 293px;
-    margin-left: 24px;
+@media (min-width: 425px) {
+  .header {
+    max-width: 95%;
   }
   .form {
     max-width: 420px;
@@ -175,6 +182,15 @@ input:-webkit-autofill {
     max-width: 382px;
     max-height: 420px;
     margin: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .header__company__logo {
+    max-width: 112px;
+  }
+  .header__company__name {
+    max-width: 293px;
+    margin-left: 24px;
   }
 }
 
