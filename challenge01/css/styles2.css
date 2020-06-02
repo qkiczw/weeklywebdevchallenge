@@ -88,10 +88,10 @@ input:-webkit-autofill {
 
 /* Inputs  and terms */
 
-.form__section__terms {
+.form__item__terms {
   margin: 15px 0 15px;
 }
-.form__section__terms label {
+.form__item__terms label {
   position: relative;
   font-family: "TitilliumText22L-Thin";
   font-size: 17.34px;
@@ -208,11 +208,15 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
   opacity: 0.3;
 }
 
-.form__section__terms label {
+.form__item__terms label {
   position: relative;
   font-family: "TitilliumText22L-Thin";
   font-size: 17.34px;
 }
+
+
+
+
 /* Media Quereis */
 
 @media (min-width: 425px) {
