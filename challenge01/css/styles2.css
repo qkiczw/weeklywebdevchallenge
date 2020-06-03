@@ -71,7 +71,7 @@ input:-webkit-autofill {
 /* Buttons */
 .form__btn--green {
   width: 100%;
-  max-height: 48px;
+  height: 48px;
   color: #ffffff;
   background: linear-gradient(
     0deg,
@@ -308,6 +308,9 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
   align-items: flex-start;
   padding: 5px;
   color: var(--primary-color);
+}
+.hidden > .form__item__placeholder {
+  opacity: 0;
 }
 
 /* Media Quereis */

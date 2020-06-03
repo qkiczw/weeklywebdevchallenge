@@ -35,7 +35,6 @@
                             <div class="form__container">
                                 <div class="form__container__content">
                                     <form action="" method="get" class="form">
-                                        <!-- Renamed from form__section to form__item -->
                                         <div class="form__item">
                                             <input class="form__item__input" id="user__name" type="text" name="reg__user__name" required>
                                             <label class="form__item__label" for="user__name">
@@ -101,16 +100,16 @@
                                 <div class="form__container__content">
                                     <form action="" method="get" class="form">
                                         <div class="form__item">
-                                            <input class="form__item__input" id="user__name" type="text" name="reg__user__name" required>
-                                            <label class="form__item__label" for="user__name">
+                                            <input class="form__item__input" id="send__user__name" type="text" name="reg__user__name" required>
+                                            <label class="form__item__label" for="send__user__name">
                                                 <img class="form__item__label__icon" src="./img/glyphicons_003_user.png"> 
                                                 <span class="form__item__vertical-label"></span> 
                                                 <span class="form__item__placeholder">Your name</span>
                                             </label>
                                         </div>
                                         <div class="form__item">
-                                            <input class="form__item__input" id="reg__email" type="email" name="reg__email">
-                                            <label class="form__item__label" for="reg__email">
+                                            <input class="form__item__input" id="send__email" type="email" name="send__email">
+                                            <label class="form__item__label" for="send__email">
                                               <img class="form__item__label__icon" src="./img/glyphicons_010_envelope.png"> 
                                               <span class="form__item__vertical-label"></span> 
                                               <span class="form__item__placeholder">Your Email</span>
@@ -121,10 +120,10 @@
                                             <label class="form__item__label form__item__label--textarea" for="textarea"><span class="form__item__placeholder">Type your message...</span></label>
                                         </div>
                                         <div class="form__item__terms">
-                                            <input type="checkbox" id="terms" name="terms" value="terms">
+                                            <input type="checkbox" id="send__terms" name="send__terms" value="terms">
                                             <label for="terms"><span class="terms__border"><span class="terms__thick"></span></span> Send a copy to my Email.</label>
                                         </div>
-                                        <button class="form__btn--green">Send email</button>
+                                        <button id="Button" class="form__btn--green form__btn__send">Send email</button>
                                     </form>
                                 </div>
                                 <div class="form__container__bg"></div>

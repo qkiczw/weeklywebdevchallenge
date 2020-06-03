@@ -1,7 +1,9 @@
 // console.warn('It`s works!');
 
-const inputElements = document.querySelectorAll("input[type='checkbox']");
-// console.log(inputElements);
+const inputElements = document.querySelectorAll(".form__item__input");
 
-let warn = () => console.log('WARNING!!!')
-inputElements.forEach(el => el.addEventListener('click', warn));
+inputElements.forEach(el => el.addEventListener('keyup', function() {
+    const label = el.nextElementSibling;
+    const inputValue = label.previousElementSibling.value;
+    inputValue.length === 0 ? label.classList.remove('hidden') : label.classList.add('hidden');
+}));
