@@ -27,6 +27,7 @@
             <main class="main">
                 <div class="main__content">
                     <div class="main__content__left">
+                        <!-- Register form -->
                         <section class="form__section register___form">
                             <header class="form__title">
                                 <h2>Register Form</h2>
@@ -91,7 +92,7 @@
                                 <div class="form__container__bg"></div>
                             </div>
                         </section>   
-
+                        <!-- Send Email form -->
                         <section class="form__section send-email___form">
                             <header class="form__title">
                                 <h2>Send Email</h2>
@@ -99,7 +100,6 @@
                             <div class="form__container">
                                 <div class="form__container__content">
                                     <form action="" method="get" class="form">
-                                        <!-- Renamed from form__section to form__item -->
                                         <div class="form__item">
                                             <input class="form__item__input" id="user__name" type="text" name="reg__user__name" required>
                                             <label class="form__item__label" for="user__name">
@@ -116,7 +116,10 @@
                                               <span class="form__item__placeholder">Your Email</span>
                                             </label>
                                         </div>
-                                        
+                                        <div class="form__item form__item__textarea">
+                                            <textarea class="form__item__input form__item__textarea" id="textarea" ></textarea>
+                                            <label class="form__item__label" for="textarea">Type your message...</label>
+                                        </div>
                                         <div class="form__item__terms">
                                             <input type="checkbox" id="terms" name="terms" value="terms">
                                             <label for="terms"><span class="terms__border"><span class="terms__thick"></span></span> Send a copy to my Email.</label>

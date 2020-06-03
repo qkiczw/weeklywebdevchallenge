@@ -218,7 +218,8 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
   color: var(--primary-color);
   margin-bottom: 21px;
 }
-.form__item__select {
+.form__item__select,
+.form__item__textarea {
   margin-bottom: 0;
 }
 .form__item__input {
@@ -286,6 +287,10 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
   position: absolute;
   font-family: "TitilliumText22L-Thin";
   font-size: 17.34px;
+}
+
+.form__item__textarea{
+  min-height: 150px;
 }
 
 /* Media Quereis */
