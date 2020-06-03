@@ -210,7 +210,7 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
 .form__item {
   box-sizing: border-box;
   position: relative;
-  /* display: flex; */
+  display: flex;
   align-items: center;
   max-width: 338px;
   height: 39px;
