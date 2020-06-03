@@ -290,7 +290,24 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
 }
 
 .form__item__textarea{
-  min-height: 150px;
+  min-height: 230px;
+}
+.form__item__textarea__input {
+  height: 100%;
+  padding: 15px 16px;
+  resize: none;
+  font-size: 16px;
+}
+.form__item__label--textarea {
+  align-items: flex-start;
+}
+.form__item__label--textarea > .form__item__placeholder{
+  padding: 15px 16px;
+}
+.form__item__textarea + label {
+  align-items: flex-start;
+  padding: 5px;
+  color: var(--primary-color);
 }
 
 /* Media Quereis */
@@ -322,7 +339,6 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
   }
   .form__container__content {
     max-width: 382px;
-    max-height: 420px;
     margin: 20px;
   }
 }
