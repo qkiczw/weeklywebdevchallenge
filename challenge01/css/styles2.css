@@ -88,6 +88,13 @@ input:-webkit-autofill {
 .form__btn__sign-in {
   width: 139px;
 }
+.form__btn__send-email {
+  width: 100%;
+}
+.form__btn__send,
+.form__btn__done {
+  width: 45%;
+}
 
 /* Inputs  and terms */
 
@@ -329,6 +336,10 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
 
 
 @media (min-width: 425px) {
+  .form__btn__send,
+  .form__btn__done {
+  width: 148px;
+}
   .terms__border {
     width: 23px;
     height: 23px;

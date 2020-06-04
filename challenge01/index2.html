@@ -125,7 +125,7 @@
                                             <input type="checkbox" id="send__terms" name="send__terms" value="terms">
                                             <label for="send__terms"><span class="terms__border"><span class="terms__thick"></span></span> Send a copy to my Email.</label>
                                         </div>
-                                        <button id="Send__Button" class="form__btn--green form__btn__send">Send email</button>
+                                        <button id="Send__Button" class="form__btn--green form__btn__send-email">Send email</button>
                                     </form>
                                 </div>
                                 <div class="form__container__bg"></div>
@@ -138,7 +138,7 @@
                         <!-- Sign In  -->
                         <section class="form__section sign-in___form">
                             <header class="form__title">
-                                <h2>Send Email</h2>
+                                <h2>Sign In</h2>
                             </header>
                             <div class="form__container">
                                 <div class="form__container__content">
@@ -171,6 +171,40 @@
                                 <div class="form__container__bg"></div>
                             </div>
                         </section>   
+
+                        <!-- Recover form -->
+                        <section class="form__section recover___form">
+                            <header class="form__title">
+                                <h2>Recover Form</h2>
+                            </header>
+                            <div class="form__container">
+                                <div class="form__container__content">
+                                    <form action="" method="get" class="form">
+                                        <div class="form__item">
+                                            <input class="form__item__input" id="recover_email" type="email" name="recover_email">
+                                            <label class="form__item__label" for="recover_email">
+                                                <img class="form__item__label__icon" src="./img/glyphicons_010_envelope.png"> 
+                                                <span class="form__item__vertical-label"></span> 
+                                                <span class="form__item__placeholder">Enter your Email</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__item">
+                                            <input class="form__item__input" id="recover__phone-number" type="email" name="recover__phone-number">
+                                            <label class="form__item__label" for="recover__phone-number">
+                                              <img class="form__item__label__icon" src="./img/glyphicons_139_phone.png"> 
+                                              <span class="form__item__vertical-label"></span> 
+                                              <span class="form__item__placeholder">Enter your Phone number</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__item__terms-and-btn">
+                                            <button id="Button__sign-in" class="form__btn--green form__btn__send">Send</button>
+                                            <button id="Button__sign-in" class="form__btn--green form__btn__done">Done</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="form__container__bg"></div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </main>
