@@ -337,8 +337,11 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
   .form {
     max-width: 420px;
   }
-  .form__container {
+  .form__section{
     width: 420px;
+  }
+  .form__container {
+    width: 100%;
   }
   .form__container__content {
     max-width: 382px;
@@ -352,6 +355,17 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
   .header__company__name {
     max-width: 293px;
     margin-left: 24px;
+  }
+}
+@media (min-width: 1024px){
+  .main__content {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 1200px;
+  }
+  .main__content__left,
+  .main__content__right {
+    width: 50%;
   }
 }
 
