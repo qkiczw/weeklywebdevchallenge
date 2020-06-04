@@ -349,12 +349,22 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
   }
 }
 @media (min-width: 768px) {
+  .header {
+    max-width: 100%;
+  }
   .header__company__logo {
     max-width: 112px;
   }
   .header__company__name {
     max-width: 293px;
     margin-left: 24px;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+  .main__content {
+    width: 100%;
   }
 }
 @media (min-width: 1024px){
@@ -366,6 +376,16 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
   .main__content__left,
   .main__content__right {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main__content__left {
+    align-items: flex-end;
+    padding-right: 40px;
+  }
+  .main__content__right {
+    align-items: flex-start;
+    padding-left: 40px;
   }
 }
 
