@@ -85,6 +85,9 @@ input:-webkit-autofill {
   text-shadow: 1px 1px #3a9a00;
   cursor: pointer;
 }
+.form__btn__sign-in {
+  width: 139px;
+}
 
 /* Inputs  and terms */
 
@@ -278,6 +281,10 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
   font-size: 16px;
 }
 
+.form__item__terms-and-btn {
+  display: flex;
+  justify-content: space-between;
+}
 .form__item__terms {
   position: relative;
   height: 100%;
@@ -388,5 +395,6 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
     padding-left: 40px;
   }
 }
+
 
 /* Animations */
