@@ -3,116 +3,259 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> 
-<html class="no-js" lang="pl"> <!--<![endif]-->
+<html class="no-js" lang="pl"> 
+<!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Weekly Webdev Challenge nr 1</title>
-        <meta name="description" content="Weekly Webdev Challenge nr 1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="./css/style.css"> -->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
         <div class="wrapper">
             <header class="header">
-                <figure>
-                    <img class="header__company-logo" src="./img/company-logo.png">
-                </figure>
-                <figure>
-                    <img class="header__company-name" src="./img/company-name.png">
-                </figure>
+                <picture class="header__company">
+                    <img class="header__company__logo" src="./img/company-logo.png">
+                    <img class="header__company__name" src="./img/company-name.png">
+                </picture>
             </header>
             <main class="main">
-                <article class="main__content">
+                <div class="main__content">
                     <div class="main__content__left">
-                        <section class="form2">
-                            <div class="test__form">
-                                <header class="form__title">
-                                    <h2>Test Form</h2>
-                                </header>
-                                <div class="test__form__container">
-                                    <div class="test__form__container__bg"></div>
-                                    <form action="" method="get" class="test__form__container__form">
-                                        <div class="test__form__section">
-                                            <input class="test__form__section__input" id="user__name" type="text" name="reg__user__name" required>
-                                            <label class="test__form__section__label" for="user__name">
-                                            <img class="test__form__section__label__icon" src="./img/glyphicons_003_user.png"> 
-                                            <span class="test__form__section__vertical-label"></span> 
-                                            <span class="test__form__section__placeholder">Username</span>
+                        <!-- left column -->
+
+                        <!-- Register form -->
+                        <section class="form__section register___form">
+                            <header class="form__title">
+                                <h2>Register Form</h2>
+                            </header>
+                            <div class="form__container">
+                                <div class="form__container__content">
+                                    <form action="" method="get" class="form">
+                                        <div class="form__item">
+                                            <input class="form__item__input" id="user__name" type="text" name="reg__user__name" required>
+                                            <label class="form__item__label" for="user__name">
+                                                <img class="form__item__label__icon" src="./img/glyphicons_003_user.png"> 
+                                                <span class="form__item__vertical-label"></span> 
+                                                <span class="form__item__placeholder">Username</span>
                                             </label>
+                                        </div>
+                                        <div class="form__item">
+                                            <input class="form__item__input" id="reg__user__password" type="password" name="reg__user__password" minlength="8" required>
+                                            <label class="form__item__label" for="reg__user__password">
+                                              <img class="form__item__label__icon" src="./img/glyphicons_203_lock.png"> 
+                                              <span class="form__item__vertical-label"></span> 
+                                              <span class="form__item__placeholder">Password</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__item">
+                                            <input class="form__item__input" id="reg__confirm__user__password" type="password" name="reg__confirm__user__password" minlength="8" required>
+                                            <label class="form__item__label" for="reg__confirm__user__password">
+                                              <img class="form__item__label__icon" src="./img/glyphicons_203_lock.png"> 
+                                              <span class="form__item__vertical-label"></span> 
+                                              <span class="form__item__placeholder">Confirm password</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__item">
+                                            <input class="form__item__input" id="reg__email" type="email" name="reg__email">
+                                            <label class="form__item__label" for="reg__email">
+                                              <img class="form__item__label__icon" src="./img/glyphicons_010_envelope.png"> 
+                                              <span class="form__item__vertical-label"></span> 
+                                              <span class="form__item__placeholder">Email</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__item form__item__select">
+                                            <select id="location-select" class="form__item__input form__input__content__input--select">
+                                                <option value=""></option>
+                                                <option value="location01">Location 01</option>
+                                                <option value="location02">Location 02</option>
+                                                <option value="location03">Location 03</option>
+                                            </select>
+                                            
+                                            <label class="form__item__label" for="reg__location">
+                                              <img class="form__item__label__icon" src="./img/glyphicons_242_google_maps.png"> 
+                                              <span class="form__item__vertical-label"></span> 
+                                              <span class="form__item__placeholder">Location</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__item__terms">
+                                            <input type="checkbox" id="terms" name="terms" value="terms">
+                                            <label for="terms"><span class="terms__border"><span class="terms__thick"></span></span> I have read and accept the terms of use.</label>
+                                        </div>
+                                        <button id="Register__Button" class="form__btn--green">Sign up</button>
+                                    </form>
+                                </div>
+                                <div class="form__container__bg"></div>
+                            </div>
+                        </section>   
+                        <!-- Send Email form -->
+                        <section class="form__section send-email___form">
+                            <header class="form__title">
+                                <h2>Send Email</h2>
+                            </header>
+                            <div class="form__container">
+                                <div class="form__container__content">
+                                    <form action="" method="get" class="form">
+                                        <div class="form__item">
+                                            <input class="form__item__input" id="send__user__name" type="text" name="reg__user__name" required>
+                                            <label class="form__item__label" for="send__user__name">
+                                                <img class="form__item__label__icon" src="./img/glyphicons_003_user.png"> 
+                                                <span class="form__item__vertical-label"></span> 
+                                                <span class="form__item__placeholder">Your name</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__item">
+                                            <input class="form__item__input" id="send__email" type="email" name="send__email">
+                                            <label class="form__item__label" for="send__email">
+                                              <img class="form__item__label__icon" src="./img/glyphicons_010_envelope.png"> 
+                                              <span class="form__item__vertical-label"></span> 
+                                              <span class="form__item__placeholder">Your Email</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__item form__item__textarea">
+                                            <textarea class="form__item__input form__item__textarea__input" id="textarea" ></textarea>
+                                            <label class="form__item__label form__item__label--textarea" for="textarea"><span class="form__item__placeholder">Type your message...</span></label>
+                                        </div>
+                                        <div class="form__item__terms">
+                                            <input type="checkbox" id="send__terms" name="send__terms" value="terms">
+                                            <label for="send__terms"><span class="terms__border"><span class="terms__thick"></span></span> Send a copy to my Email.</label>
+                                        </div>
+                                        <button id="Send__Button" class="form__btn--green form__btn__send-email">Send email</button>
+                                    </form>
+                                </div>
+                                <div class="form__container__bg"></div>
+                            </div>
+                        </section>   
+                    </div>
+                    <div class="main__content__right">
+                        <!-- right colum test! -->
+
+                        <!-- Sign In  -->
+                        <section class="form__section sign-in___form">
+                            <header class="form__title">
+                                <h2>Sign In</h2>
+                            </header>
+                            <div class="form__container">
+                                <div class="form__container__content">
+                                    <form action="" method="get" class="form">
+                                        <div class="form__item">
+                                            <input class="form__item__input" id="sign-in__name" type="text" name="sign-in__name" required>
+                                            <label class="form__item__label" for="sign-in__name">
+                                                <img class="form__item__label__icon" src="./img/glyphicons_003_user.png"> 
+                                                <span class="form__item__vertical-label"></span> 
+                                                <span class="form__item__placeholder">Your name</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__item">
+                                            <input class="form__item__input" id="sign-in__email" type="email" name="sign-in__email">
+                                            <label class="form__item__label" for="sign-in__email">
+                                              <img class="form__item__label__icon" src="./img/glyphicons_010_envelope.png"> 
+                                              <span class="form__item__vertical-label"></span> 
+                                              <span class="form__item__placeholder">Your Email</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__item__terms-and-btn">
+                                            <div class="form__item__terms">
+                                                <input type="checkbox" id="sign-in__terms" name="sign-in__terms" value="terms">
+                                                <label for="sign-in__terms"><span class="terms__border"><span class="terms__thick"></span></span> Remember me.</label>
+                                            </div>
+                                            <button id="Button__sign-in" class="form__btn--green form__btn__sign-in">Sign in</button>
                                         </div>
                                     </form>
                                 </div>
-                            </div>   
-                        </section>
-                        
-
-                        <!-- <section class="form register__form">
-                            <header class="form__title register__form__title">
-                                <h2>Register Form</h2>
-                            </header>
-                            <div class="register__form__container">
-                                <div class="register__form__container__bg"></div>
-                                <form action="" method="get" class="register__form__container__form">
-                                    <div class="form__section">
-                                        <input class="form__section__input" id="user__name" type="text" name="reg__user__name" required>
-                                        <label class="form__section__label" for="user__name">
-                                          <img class="form__section__label__icon" src="./img/glyphicons_003_user.png"> 
-                                          <span class="form__section__vertical-label"></span> 
-                                          <span class="form__section__placeholder">Username</span>
-                                        </label>
-                                    </div>
-                                    <div class="form__section">
-                                        <input class="form__section__input" id="reg__user__password" type="password" name="reg__user__password" minlength="8" required>
-                                        <label class="form__section__label" for="reg__user__password">
-                                          <img class="form__section__label__icon" src="./img/glyphicons_203_lock.png"> 
-                                          <span class="form__section__vertical-label"></span> 
-                                          <span class="form__section__placeholder">Password</span>
-                                        </label>
-                                    </div>
-                                    <div class="form__section">
-                                        <input class="form__section__input" id="reg__confirm__user__password" type="password" name="reg__confirm__user__password" minlength="8" required>
-                                        <label class="form__section__label" for="reg__confirm__user__password">
-                                          <img class="form__section__label__icon" src="./img/glyphicons_203_lock.png"> 
-                                          <span class="form__section__vertical-label"></span> 
-                                          <span class="form__section__placeholder">Confirm password</span>
-                                        </label>
-                                    </div>
-                                    <div class="form__section">
-                                        <input class="form__section__input" id="reg__email" type="email" name="reg__email">
-                                        <label class="form__section__label" for="reg__email">
-                                          <img class="form__section__label__icon" src="./img/glyphicons_010_envelope.png"> 
-                                          <span class="form__section__vertical-label"></span> 
-                                          <span class="form__section__placeholder">Email</span>
-                                        </label>
-                                    </div>
-                                    <div class="form__section form__section__select">
-                                        <select id="location-select" class="form__section__input form__section__content__input--select">
-                                            <option value=""></option>
-                                            <option value="location01">Location 01</option>
-                                            <option value="location02">Location 02</option>
-                                            <option value="location03">Location 03</option>
-                                        </select>
-                                        
-                                        <label class="form__section__label" for="reg__location">
-                                          <img class="form__section__label__icon" src="./img/glyphicons_242_google_maps.png"> 
-                                          <span class="form__section__vertical-label"></span> 
-                                          <span class="form__section__placeholder">Location</span>
-                                        </label>
-                                    </div>
-                                    <div class="form__section form__section__terms">
-                                        <input type="checkbox" id="terms" name="terms" value="terms">
-                                        <label for="terms"><span class="border"><span class="thick"></span></span> I have read and accept the terms of use.</label>
-                                    </div>
-                                    <button class="form__btn--green">Sign up</button>
-                                </form>
+                                <div class="form__container__bg"></div>
                             </div>
-                        </section> -->
+                        </section>   
+
+                        <!-- Recover form -->
+                        <section class="form__section recover___form">
+                            <header class="form__title">
+                                <h2>Recover Form</h2>
+                            </header>
+                            <div class="form__container">
+                                <div class="form__container__content">
+                                    <form action="" method="get" class="form">
+                                        <div class="form__item">
+                                            <input class="form__item__input" id="recover_email" type="email" name="recover_email">
+                                            <label class="form__item__label" for="recover_email">
+                                                <img class="form__item__label__icon" src="./img/glyphicons_010_envelope.png"> 
+                                                <span class="form__item__vertical-label"></span> 
+                                                <span class="form__item__placeholder">Enter your Email</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__item">
+                                            <input class="form__item__input" id="recover__phone-number" type="email" name="recover__phone-number">
+                                            <label class="form__item__label" for="recover__phone-number">
+                                              <img class="form__item__label__icon" src="./img/glyphicons_139_phone.png"> 
+                                              <span class="form__item__vertical-label"></span> 
+                                              <span class="form__item__placeholder">Enter your Phone number</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__item__terms-and-btn">
+                                            <button id="Button__recover--send" class="form__btn--green form__btn__send">Send</button>
+                                            <button id="Button__recover--done" class="form__btn--green form__btn__done">Done</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="form__container__bg"></div>
+                            </div>
+                        </section>
+
+                        <!-- Subscribe form -->
+                        <section class="form__section recover___form">
+                            <header class="form__title">
+                                <h2>Subscribe Form</h2>
+                            </header>
+                            <div class="form__container">
+                                <div class="form__container__content">
+                                    <form action="" method="get" class="form">
+                                        <div class="form__item">
+                                            <input class="form__item__input" id="subscribe-form" type="email" name="subscribe-form">
+                                            <label class="form__item__label" for="subscribe-form">
+                                                <img class="form__item__label__icon" src="./img/glyphicons_010_envelope.png"> 
+                                                <span class="form__item__vertical-label"></span> 
+                                                <span class="form__item__placeholder">Enter your Email</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__item__terms-and-btn">
+                                            <button id="Button__subscribe--subscribe" class="form__btn--green form__btn__subscribe">Subscribe</button>
+                                            <button id="Button__subscribe--no-thanks" class="form__btn--red form__btn__subscribe">No, thanks</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="form__container__bg"></div>
+                            </div>
+                        </section>
+                        <!-- Bottom Logo -->
+                        <section class="bottom__logo">
+                                <div class="bottom__logo__content">
+                                    <div class="bottom__logo__image">
+                                        <picture>
+                                            <img src="./img/company-logo.png">
+                                        </picture>
+                                    </div>
+                                    <div class="bottom__logo__name">
+                                        <picture>
+                                            <img src="./img/company-name.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="bottom__logo__url">
+                                    <picture>
+                                        <img src="./img/company-url.png">
+                                    </picture>
+                                </div>
+                        </section>
                     </div>
-                    <div class="main__content__right">right column</div>
-                </article>
+                </div>
             </main>
         </div>
+        
         <script src="./js/script.js" async defer></script>
     </body>
 </html>
