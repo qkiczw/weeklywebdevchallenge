@@ -103,7 +103,8 @@ input:-webkit-autofill {
   cursor: pointer;
 }
 .form__btn__sign-in {
-  width: 139px;
+  /* width: 139px;  To jest na widok ponad 420px*/
+  width: 100%;
 }
 .form__btn__send-email {
   width: 100%;
@@ -111,7 +112,11 @@ input:-webkit-autofill {
 .form__btn__send,
 .form__btn__done,
 .form__btn__subscribe {
-  width: 45%;
+  /* width: 45%; widok na 420px */
+}
+.form__btn__send,
+.form__btn__subscribe {
+  margin-bottom: 15px;
 }
 
 /* Inputs  and terms */
@@ -308,6 +313,7 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
 .form__item__terms-and-btn {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 .form__item__terms {
   position: relative;
@@ -386,6 +392,17 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
 }
 
 @media (min-width: 425px) {
+  /* .form__btn__send,
+  .form__btn__done,
+  .form__btn__subscribe {
+    width: 45%;
+  } */
+  .form__item__terms-and-btn {
+    flex-direction: row;
+  }
+  .form__btn__sign-in {
+    width: 139px; 
+  }
   .form__btn__send,
   .form__btn__done,
   .form__btn__subscribe {
