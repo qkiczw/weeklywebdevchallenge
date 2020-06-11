@@ -17,13 +17,11 @@ const signInCheckbox = document.querySelector('#sign-in__terms')
 
 termsChecker = function(e) {
     const getCheckboxName = e.target.name;
-    console.log(`checkboxName: ${getCheckboxName}`);
 
     const checkboxStatus = document.querySelector(`#${getCheckboxName}__terms`).checked;
     let btn = document.querySelector(`#${getCheckboxName}__button`); 
 
     checkboxStatus ? btn.disabled = false : btn.disabled = true;
-    console.warn(`zaznaczam: ${getCheckboxName}`);
 }
 
 // registerCheckbox.addEventListener('click', termsChecker);
@@ -34,7 +32,5 @@ termsChecker = function(e) {
 // signInCheckbox.addEventListener('ontouchend', termsChecker);
 
 const checkboxes = document.querySelectorAll('input[type=checkbox]');
-checkboxes.forEach( checkbox => {
-    checkbox.addEventListener('click', termsChecker);
-    checkbox.addEventListener('ontouchend', termsChecker);
-})
+checkboxes.forEach( checkbox => checkbox.addEventListener('click', termsChecker) );
+checkboxes.forEach( checkbox => checkbox.addEventListener('ontouchend', termsChecker) );

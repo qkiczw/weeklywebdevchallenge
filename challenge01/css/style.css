@@ -259,6 +259,7 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
 .form__item__textarea {
   margin-bottom: 0;
 }
+
 .form__item__input {
   box-sizing: border-box;
   position: absolute;
@@ -312,7 +313,10 @@ input[type="checkbox"]:checked + label > .terms__border > .terms__thick {
   color: var(--primary-color);
   font-size: 16px;
 }
-
+select {
+  -webkit-appearance: none;
+  font-family: "TitilliumText22L-Thin";
+}
 .form__item__terms-and-btn {
   display: flex;
   justify-content: space-between;
