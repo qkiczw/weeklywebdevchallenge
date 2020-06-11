@@ -23,11 +23,18 @@ termsChecker = function(e) {
     let btn = document.querySelector(`#${getCheckboxName}__button`); 
 
     checkboxStatus ? btn.disabled = false : btn.disabled = true;
+    console.warn(`zaznaczam: ${getCheckboxName}`);
 }
 
-registerCheckbox.addEventListener('click', termsChecker);
-registerCheckbox.addEventListener('ontouchend', termsChecker);
-sendEmailCheckbox.addEventListener('click', termsChecker);
-sendEmailCheckbox.addEventListener('ontouchend', termsChecker);
-signInCheckbox.addEventListener('click', termsChecker);
-signInCheckbox.addEventListener('ontouchend', termsChecker);
+// registerCheckbox.addEventListener('click', termsChecker);
+// registerCheckbox.addEventListener('ontouchend', termsChecker);
+// sendEmailCheckbox.addEventListener('click', termsChecker);
+// sendEmailCheckbox.addEventListener('ontouchend', termsChecker);
+// signInCheckbox.addEventListener('click', termsChecker);
+// signInCheckbox.addEventListener('ontouchend', termsChecker);
+
+const checkboxes = document.querySelectorAll('input[type=checkbox]');
+checkboxes.forEach( checkbox => {
+    checkbox.addEventListener('click', termsChecker);
+    checkbox.addEventListener('ontouchend', termsChecker);
+})
