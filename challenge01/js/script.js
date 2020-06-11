@@ -1,5 +1,3 @@
-// console.warn('It`s works!');
-
 const inputElements = document.querySelectorAll(".form__item__input");
 
 function inputContentDetect() {
@@ -12,15 +10,24 @@ inputElements.forEach(el => el.addEventListener('ontouchend', inputContentDetect
 inputElements.forEach(el => el.addEventListener('keyup', inputContentDetect));
 
 const xxx = document.querySelector('#register__terms').value;
-console.log(`value to: ${xxx}`);
 
-const checkbox = document.querySelector('#register__terms');
+const registerCheckbox = document.querySelector('#register__terms');
+const sendEmailCheckbox = document.querySelector('#send__terms')
+const signInCheckbox = document.querySelector('#sign-in__terms')
 
-checkbox.addEventListener('click', function() {
-    const checkboxStatus = document.querySelector('#register__terms').checked;
-    let btn = document.querySelector('#register__button'); 
-    console.log(`Checkbox is: ${checkboxStatus}`);
+termsChecker = function(e) {
+    const getCheckboxName = e.target.name;
+    console.log(`checkboxName: ${getCheckboxName}`);
+
+    const checkboxStatus = document.querySelector(`#${getCheckboxName}__terms`).checked;
+    let btn = document.querySelector(`#${getCheckboxName}__button`); 
 
     checkboxStatus ? btn.disabled = false : btn.disabled = true;
-    console.log(`Button is: ${btn.disabled}`);
-})
+}
+
+registerCheckbox.addEventListener('click', termsChecker);
+registerCheckbox.addEventListener('ontouchend', termsChecker);
+sendEmailCheckbox.addEventListener('click', termsChecker);
+sendEmailCheckbox.addEventListener('ontouchend', termsChecker);
+signInCheckbox.addEventListener('click', termsChecker);
+signInCheckbox.addEventListener('ontouchend', termsChecker);
